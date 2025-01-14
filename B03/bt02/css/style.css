@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 170px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: greenyellow;
+    position: absolute;
+}
+
+.boxA {
+    width: 80px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    background-color: red;
+    position: absolute;
+}
+
+.boxcentercenter {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.boxctl {
+    top: 0;
+    left: 0;
+    transform: translate(-100%, -100%);
+}
+
+.boxbottomright {
+    bottom: 0;
+    right: 0;
+}
+
+.boxcbottomcenter {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

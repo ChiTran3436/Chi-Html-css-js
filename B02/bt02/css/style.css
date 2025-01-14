@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman";
+}
+
+.container {
+    background-color: #FED049;
+    color: white;
+    width: 1000px;
+    font-size: 0px;
+    margin: 40px auto;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 23px;
+    text-indent: 30px;
+}
+
+.box {
+    font-size: 20px;
+    line-height: 23px;
+    display: inline-block;
+    padding: 20px;
+    margin: 15px;
+    width: calc(25% - 30px);
+    background-color: #007580;
+    vertical-align: middle;
+}
+
+.box:nth-child(even) {
+    background-color: red;
+}

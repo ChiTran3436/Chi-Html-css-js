@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    margin: 100px auto;
+
+    position: relative;
+}
+
+.box_child {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(127, 223, 127);
+    margin: 70px;
+    position: absolute;
+}
+
+.box_child1 {
+    width: 440px;
+    height: 440px;
+    background-color: rgb(26, 11, 141);
+    margin: 15px;
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    line-height: 440px;
+    text-align: center;
+
+}

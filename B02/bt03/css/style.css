@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.social-list {
+    width: 500px;
+    background-color: #F0E68C;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.social-list_item {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    margin: 0 17px;
+}
+
+.social-list_item i {
+    font-size: 60px;
+    line-height: 100px;
+}

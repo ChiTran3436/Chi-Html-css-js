@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article {
+    display: inline-block;
+    border: 1px solid red;
+    margin-bottom: 5px;
+    padding: 5px;
+
+}
+
+img {
+    width: 200px;
+    display: inline-block;
+}
+
+p {
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 0;
+}

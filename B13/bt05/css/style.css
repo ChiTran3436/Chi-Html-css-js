@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-backgroundcolor: #dc3545;
+}
+
+.container {
+    width: 1400px;
+    border: 1px solid rgb(180, 164, 164);
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+
+.nav-menu-top {
+    margin: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* .input-title,
+.sort-by,
+.asc {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.add {
+    display: inline-block;
+}
+
+.nav-menu-bottom {
+    display: block;
+}
+
+input.text,
+.dropdown {
+    display: inline-block;
+}  */
+
+
+.title {
+    border: none;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-title input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.input-title button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #007bff;
+    ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sort-by button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #ffff;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.btn-asc {
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px solid #dc3545;
+    background-color: var(--primary-backgroundcolor);
+    color: #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-add {
+    width: 500px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px solid #dc3545;
+    background-color: var(--primary-backgroundcolor);
+    color: #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+.nav-menu-bottom .text,
+.dropdown-button {
+    display: inline-block;
+    margin: 5px;
+}
+
+.nav-menu-bottom .text,
+.dropdown-button {
+    display: inline-block;
+    margin: 5px;
+}
+
+.nav-menu-bottom input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.dropdown-button {
+    padding: 5px 10px;
+    border: 1px solid #6c757d;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit,
+.btn-cancel {
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-submit {
+    border: 1px solid #007bff;
+    background-color: #007bff;
+}
+
+.btn-cancel {
+    border: 1px solid #dc3545;
+    background-color: #dc3545;
+}

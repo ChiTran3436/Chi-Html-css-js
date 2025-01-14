@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Group</title>
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .block {
+            width: 800px;
+            margin: 20px auto;
+            height: 250px;
+            border: 2px solid red;
+
+        }
+
+        .menu {
+
+            list-style: none;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .menu li {
+            border: 1px solid blue;
+            margin-right: 4px;
+            padding: 3px 15px;
+            float: left;
+            width: 120px;
+            text-align: center;
+        }
+
+        .menu li.active {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        <ul class="menu">
+            <li class="active">HOME</li>
+            <li>About Us</li>
+            <li>Products</li>
+            <li>Specials</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

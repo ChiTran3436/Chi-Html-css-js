@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    background-color: #C8D5F1;
+}
+
+.container {
+    background-color: white;
+    max-width: 625px;
+    border: 0px solid white;
+    border-radius: 15px;
+    margin: 61px auto;
+    text-align: center;
+}
+
+.title {
+    background-color: #20225E;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    padding: 100px 0 70px 0;
+    position: relative;
+}
+
+.close {
+    background-color: #2F316E;
+    color: white;
+    font-size: 20px;
+    border-radius: 100%;
+    position: absolute;
+    padding: 15px 20px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: #151749;
+}
+
+
+
+.form {
+    font-size: 14px;
+    color: #151749;
+    padding-top: 65px;
+    padding: 65px 117px 70px 117px;
+}
+
+.form_group {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700px;
+    margin-top: 1px;
+}
+
+input,
+select {
+    font-size: 18px;
+    width: 100%;
+    color: #151749;
+    padding: 13px 0;
+    border: 0;
+    border-bottom: 2px solid #D3D5F1;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+
+input::placeholder {
+    color: #151749;
+}
+
+button {
+    font-size: 16px;
+    padding: 27px 92px;
+    background-color: #20225E;
+    color: white;
+    font-size: 18px;
+    border-radius: 38.5px;
+}

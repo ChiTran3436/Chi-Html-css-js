@@ -1,0 +1,9 @@
+h1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    line-height: 100px;
+    margin: auto;
+    font-size: 10px;
+}
