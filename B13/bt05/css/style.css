@@ -8,7 +8,12 @@
 
 :root {
     --primary-backgroundcolor: #dc3545;
+    --primary-colortext: #ffff;
 }
+
+
+
+
 
 .container {
     width: 1400px;
@@ -19,34 +24,23 @@
 }
 
 .nav-menu-top {
-    margin: 20px;
+    padding: 20px;
     font-size: 18px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 
 }
 
-/* .input-title,
-.sort-by,
-.asc {
-    display: inline-block;
-    vertical-align: middle;
+.nav-menu {
+    margin-bottom: 20px;
 }
 
-.add {
-    display: inline-block;
+.input-title {
+    display: flex;
+    flex: 1;
+    font-size: 0;
 }
-
-.nav-menu-bottom {
-    display: block;
-}
-
-input.text,
-.dropdown {
-    display: inline-block;
-}  */
-
 
 .title {
     border: none;
@@ -56,10 +50,12 @@ input.text,
 }
 
 .input-title input {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     width: 400px;
+
 }
 
 .input-title button {
@@ -67,19 +63,36 @@ input.text,
     border: 1px solid #ccc;
     background-color: #ffffff;
     color: #007bff;
-    ;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     cursor: pointer;
+
 }
 
-.sort-by button {
-    padding: 10px 20px;
+.sort_container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+select#sort {
+    font-size: 14px;
+    width: 130px;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #007bff;
     background-color: #007bff;
-    color: #ffff;
+    color: var(--primary-colortext);
     cursor: pointer;
-    margin-left: 40px;
+    /* text-align: center; */
+}
+
+option {
+    color: #000000;
+    background-color: #ffff;
+    text-align: left;
 }
 
 .btn-asc {
@@ -87,61 +100,79 @@ input.text,
     font-size: 18px;
     border: 1px solid #dc3545;
     background-color: var(--primary-backgroundcolor);
-    color: #ffff;
+    color: var(--primary-colortext);
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
+
+}
+
+.add {
+    flex: 1;
 }
 
 .btn-add {
-    width: 500px;
+    width: 100%;
     padding: 5px 10px;
     font-size: 18px;
     border: 1px solid #dc3545;
     background-color: var(--primary-backgroundcolor);
-    color: #ffff;
+    color: var(--primary-colortext);
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 20px;
+    margin-bottom: 10px;
 
 }
 
-.nav-menu-bottom .text,
-.dropdown-button {
-    display: inline-block;
-    margin: 5px;
+
+.nav-menu-bottom {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0%);
+    transition: .3s;
+    justify-content: space-between;
+    gap: 5px;
+    position: relative;
+    /* display: none; */
+
 }
 
-.nav-menu-bottom .text,
-.dropdown-button {
-    display: inline-block;
-    margin: 5px;
+.hidden {
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: .3s;
 }
 
 .nav-menu-bottom input {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 200px;
+    width: 240px;
+    height: 40px;
 }
 
-.dropdown-button {
-    padding: 5px 10px;
+select#small {
+    width: 90px;
+    height: 40px;
+    padding: 5px;
     border: 1px solid #6c757d;
-    background-color: #6c757d;
-    color: #fff;
+    color: #6c757d;
     border-radius: 5px;
     cursor: pointer;
 }
+
+
 
 .btn-submit,
 .btn-cancel {
+    width: 80px;
+    height: 40px;
     padding: 5px 15px;
     border-radius: 5px;
-    display: inline-block;
-    margin: 5px;
-    color: #fff;
+    color: var(--primary-colortext);
     cursor: pointer;
+
 }
 
 .btn-submit {
@@ -152,4 +183,51 @@ input.text,
 .btn-cancel {
     border: 1px solid #dc3545;
     background-color: #dc3545;
+}
+
+/********* TABLE *******/
+
+.task>h3 {
+    background-color: rgb(49, 174, 49);
+    color: var(--primary-colortext);
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.menu-title {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+
+.menu-title th,
+.menu-title td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-left: none;
+
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: right;
+}
+
+.btn-edit {
+
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn-delete {
+
+    background-color: var(--primary-backgroundcolor);
+    color: white;
 }

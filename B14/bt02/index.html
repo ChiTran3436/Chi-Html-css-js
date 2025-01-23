@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="main-title">E-Reader</h1>
+    <div class="container">
+        <div class="sidebar">
+            <div class="font-size">
+                <label for="font-size"> Cỡ Chữ </label>
+                <button class="btn-decrease">-</button>
+                <button class="btn-increase">+</button>
+            </div>
+            <div class="line-space">
+                <label for="line-space"> Cách Dòng ( ) </label>
+                <input type="range" id="line-space" min="1" max="4" step="0.5">
+            </div>
+            <div class="alignment">
+                <label for="alignment"> Căn Lề </label>
+                <select name="" id="alignment">
+                    <option value="left">Trái </option>
+                    <option value="right">Phải </option>
+                    <option value="center">Giữa </option>
+                    <option value="justify">Đều</option>
+                </select>
+            </div>
+            <div class="background-color">
+                <label for="background-color"> Màu Nền </label>
+                <button class="btn-color" onclick="changeColor('white')" style="background-color:white;"></button>
+                <button class="btn-color" onclick="changeColor('yellow')" style="background-color: yellow;"></button>
+                <button class="btn-color" onclick="changeColor('black')" style="background-color: black;"></button>
+            </div>
+            <div class="text-color">
+                <label for="text-color"> Màu Chữ </label>
+                <input type="color" name="" id="text-color">
+            </div>
+        </div>
+
+        <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias culpa eum eligendi in repellendus.
+                Consectetur dolor vero ratione doloribus totam aperiam minus nam ea similique quis, minima, alias
+                exercitationem temporibus nihil iure officia veritatis dolorum corporis est mollitia porro adipisci!
+                Repellendus aut quae provident harum repellat dolorum quisquam incidunt nulla quasi quos sint
+                blanditiis, in eius? Perferendis a, dolores magnam illo repudiandae, debitis eos officia porro
+                consectetur tempore facilis amet temporibus est, vitae sit quaerat dolorem ea pariatur omnis reiciendis
+                nam molestiae. Repellat vitae minima sed hic libero obcaecati qui molestias quae provident totam,
+                aperiam et optio consequuntur assumenda quia doloribus illum placeat nisi eum, reiciendis non sit
+                officiis! Voluptatum earum beatae modi repudiandae molestias iste harum totam ipsum doloribus? Maiores,
+                eligendi qui? Repudiandae commodi libero doloribus? Minus ipsum numquam inventore quos earum commodi
+                excepturi. Quos illum, voluptatem placeat totam porro maiores doloribus, itaque iste doloremque sit
+                mollitia vero magni ipsa eius suscipit. Praesentium tempore excepturi molestias, sunt, libero eligendi
+                nesciunt, vel veniam nobis totam natus incidunt in. Iusto perferendis facilis blanditiis dolore hic?
+                Reprehenderit fugiat sapiente dolorum similique, recusandae nemo quaerat fuga nobis earum debitis,
+                doloribus molestiae amet consequatur. Voluptates, voluptatum debitis. Corporis blanditiis distinctio non
+                eveniet unde? Tempora.</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./jq/my jq.js"></script>
+</body>
+
+</html>

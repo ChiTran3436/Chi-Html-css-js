@@ -17,34 +17,78 @@
                 <input class="email" type="email" name="Enter keyword" id="" placeholder="Enter keyword ...">
                 <button>GO!</button>
             </div>
-            <div class="sort-by">
-                <button class="btn-sort-by">SORT BY <i class="fas fa-solid fa-caret-down"></i></button>
-            </div>
-            <div class="asc">
-                <button class="btn-asc">NAME - ASC</button>
+            <div class="sort_container">
+                <div class="sort-by">
+                    <select name="" id="sort">
+                        <option value="" selected disabled hidden>Sort - By</option>
+                        <option value="1">Name - ASC</option>
+                        <option value="2">Name - DESC</option>
+                        <option value="3">Level - ASC</option>
+                        <option value="4">Level - DESC</option>
+                    </select>
+                </div>
+                <div class="asc">
+                    <button class="btn-asc">NAME - ASC</button>
+                </div>
             </div>
             <div class="add">
-                <button class="btn-add">ADD</button>
-            </div>
-            <!-- <div class="nav-menu-bottom">
-                <input class="text" type="text" placeholder="Task Name">
-                <div class="dropdown">
-                    <button class="dropdown-button">Small </button>
-                    <div class="dropdown-menu">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                    </div>
-                    <button class="btn-submit">SUBMIT</button>
-                    <button class="btn-cancel">CANCEL</button>
+                <button class="btn-add" id="btn-add">ADD</button>
+                <div class="nav-menu-bottom hidden">
+                    <input id="taskName" class="text" type="text" placeholder="Task Name">
+                    <select name="" id="level">
+                        <option value="Small">Small</option>
+                        <option value="Nomal">Nomal</option>
+                        <option value="Hight">Hight</option>
+                    </select>
+                    <button class="btn-submit" id="btn-submit">SUBMIT</button>
+                    <button class="btn-cancel" id="btn-cancel">CANCEL</button>
                 </div>
+            </div>
 
-            </div> -->
         </div>
 
     </div>
+    <div class="task container">
+        <h3>List Task</h3>
+        <table class="menu-title">
+            <thead class="menu-title-header">
+                <tr>
+                    <th>#</th>
+                    <th>Task</th>
+                    <th>Level</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="title-body">
+                <tr>
+                    <td>1</td>
+                    <td>value</td>
+                    <td>value</td>
+                    <td>
+                        <button class="btn-edit">EDIT</button>
+                        <button class="btn-delete">DELETE</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>value</td>
+                    <td>value</td>
+                    <td>
+                        <button class="btn-edit">EDIT</button>
+                        <button class="btn-delete">DELETE</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <script src="./js/my.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/const.js"></script>
+    <script src="./js/lib.js"></script>
+    <script src="./js/main.js"></script>
+
 </body>
 
 </html>

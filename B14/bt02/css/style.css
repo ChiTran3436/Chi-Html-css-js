@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(247, 236, 236);
+    border: 1px solid none;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+
+}
+
+.main-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.sidebar {
+    display: block;
+    width: 400px;
+    background-color: #004080;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+}
+
+.font-size,
+.line-space,
+.alignment,
+.background-color,
+.text-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.font-size label {
+    flex: 1;
+    text-align: left;
+}
+
+
+
+.font-size button {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#alignment {
+    font-size: 16px;
+    padding: 5px;
+    width: 130px;
+}
+
+option {
+    background-color: rgb(81, 77, 77);
+    color: #ffffff;
+}
+
+.btn-color {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.background-color label {
+    flex: 1;
+    text-align: left;
+}
+
+#text-color {
+    width: 130px;
+}
+
+.content {
+    font-size: 16px;
+    width: 1000px;
+    padding: 10px;
+
+}
