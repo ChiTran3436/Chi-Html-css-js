@@ -69,6 +69,35 @@
 
 }
 
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.level-small {
+    background-color: rgb(2, 69, 251);
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+.level-normal {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+.level-high {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
 .sort_container {
     display: flex;
     flex: 1;
@@ -162,7 +191,9 @@ select#small {
     cursor: pointer;
 }
 
-
+select#level {
+    border-radius: 5px;
+}
 
 .btn-submit,
 .btn-cancel {

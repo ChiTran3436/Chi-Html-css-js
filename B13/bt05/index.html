@@ -14,8 +14,8 @@
     <div class="nav-menu container ">
         <div class="nav-menu-top">
             <div class="input-title">
-                <input class="email" type="email" name="Enter keyword" id="" placeholder="Enter keyword ...">
-                <button>GO!</button>
+                <input class="email" type="email" name="" id="Enter-keyword" placeholder="Enter keyword ...">
+                <button id="btn-Go">GO!</button>
             </div>
             <div class="sort_container">
                 <div class="sort-by">
@@ -34,8 +34,10 @@
             <div class="add">
                 <button class="btn-add" id="btn-add">ADD</button>
                 <div class="nav-menu-bottom hidden">
+                    <input id="taskId" hidden class="text" type="text" placeholder="Task Name">
                     <input id="taskName" class="text" type="text" placeholder="Task Name">
                     <select name="" id="level">
+                        <option selected disabled value="default">Level</option>
                         <option value="Small">Small</option>
                         <option value="Nomal">Nomal</option>
                         <option value="Hight">Hight</option>
@@ -59,25 +61,25 @@
                     <th>Action</th>
                 </tr>
             </thead>
-            <tbody class="title-body">
+            <tbody class="title-body" id="title-body">
+                <!-- <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button class="btn-edit">EDIT</button>
+                        <button onclick="javascript:hanldeDetele" class="btn-delete">DELETE</button>
+                    </td>
+                </tr>
                 <tr>
                     <td>1</td>
-                    <td>value</td>
+                    <td></td>
                     <td>value</td>
                     <td>
                         <button class="btn-edit">EDIT</button>
                         <button class="btn-delete">DELETE</button>
                     </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>value</td>
-                    <td>value</td>
-                    <td>
-                        <button class="btn-edit">EDIT</button>
-                        <button class="btn-delete">DELETE</button>
-                    </td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
     </div>
