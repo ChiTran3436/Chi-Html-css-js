@@ -1,0 +1,259 @@
+:root {
+    --primary-font: 'Playfair Display', sans-serif;
+    --titles-font: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    font-family: var(--primary-font);
+}
+
+/* ============== Header============ */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.news-logo p {
+    display: inline;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu ul li:hover a {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menu-icon i:hover {
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-bar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.nav-menu a:last-child {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: flex;
+    font-size: 20px;
+    gap: 30px;
+}
+
+.search-input {
+    display: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* ================= Section ============ */
+
+
+.top-title {
+    font-family: var(--titles-font);
+    font-size: 48px;
+    margin: 0px 0px 24px 10px;
+}
+
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.news-topic {
+    display: flex;
+    gap: 20px;
+
+}
+
+.img-title {
+    flex: 2;
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+/* .img-title img {
+    max-width: 950px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+} */
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.img-title p {
+    position: absolute;
+    bottom: 20%;
+    left: 40px;
+    right: 40px;
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+
+}
+
+.img-title i {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.title-topic {
+    flex: 1;
+    font-family: var(--primary-font);
+    padding: 20px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.title-topic>span {
+    font-weight: bold;
+}
+
+.title-topic>span:hover {
+    color: #0069fc;
+    cursor: pointer;
+}
+
+.title-small {
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+}
+
+.hot-topic {
+    margin-bottom: 60px;
+}
+
+/* ========== LATEST NEWS */
+
+.latest-top-title h2 {
+    font-family: var(--titles-font);
+    font-size: 35px;
+    margin: 0px 0px 24px 10px;
+}
+
+.latest-top-title {
+    width: 100%;
+}
+
+.latest-news {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+}
+
+.latest-news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* margin-bottom: 80px; */
+}
+
+.news-list {
+    flex: calc(25% - 30px);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.latest-img {
+    position: relative;
+}
+
+.latest-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.fa-heart {
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.latest-title h3 {
+    font-family: var(--primary-font);
+    font-size: 22px;
+    color: #2c3e50;
+}
+
+/* ========= FOOTER */
+.title-footer {
+    font-family: var(--primary-font);
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    color: #949494;
+}
