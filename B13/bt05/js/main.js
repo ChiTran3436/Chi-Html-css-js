@@ -25,26 +25,30 @@ $(document).ready(function () {
 
     ELEMENT_SORT.change(function (e) {
         let sortType = $(this).val();
-        let levelColor = { "Small": 1, "Normal": 2, "High": 3 };
+        let name = "";
+        switch (sortType) {
+            case "2":
+                name = "Name - DESC"
+                data.sort((a, b) => b.taskName.localeCompare(a.taskName));
+                break;
+            case "3":
+                name = "Level - ASC"
+                data.sort((a, b) => a.taskLevel.localeCompare(b.taskLevel));
+                break;
+            case "4":
+                name = "Level - DESC"
+                data.sort((a, b) => b.taskLevel.localeCompare(a.taskLevel));
+                break;
 
-        if (sortType === "1") {
-            //A-Z (ASC)
-            data.sort((a, b) => a.taskName.localeCompare(b.taskName));
-        } else if (sortType === "2") {
-            //Z-A  (DESC)
-            data.sort((a, b) => b.taskName.localeCompare(a.taskName));
-        } else if (sortType === "3") {
-            // A-Z (ASC)
-            data.sort((a, b) => levelColor[a.taskLevel] - levelColor[b.taskLevel]);
-        } else if (sortType === "4") {
-            // Z-A  (DESC)
-            data.sort((a, b) => levelColor[b.taskLevel] - levelColor[a.taskLevel]);
+            default:
+                name = "Name - ASC"
+                data.sort((a, b) => a.taskName.localeCompare(b.taskName));
+                break;
         }
-
+        $('.btn-asc').html(name);
         showData(data);
+
     });
-
-
 
     ELEMENT_BTN_ADD.click(function (e) {
         toggleForm()

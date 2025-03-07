@@ -74,6 +74,22 @@
     font-weight: bold;
 }
 
+/* background Level */
+
+.level-small,
+.level-normal,
+.level-high {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+td {
+    text-align: center;
+
+}
+
 .level-small {
     background-color: rgb(2, 69, 251);
     color: black;
@@ -98,6 +114,7 @@
     text-align: center;
 }
 
+/* ------------------------------- */
 .sort_container {
     display: flex;
     flex: 1;

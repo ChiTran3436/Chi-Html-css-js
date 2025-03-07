@@ -25,33 +25,39 @@ function generateRandomId(length = 10) {
     return id;
 }
 
+const handleRenderLevelClass = (level) => {
+    let levelClass = 'small'
+    switch (level) {
+        case "Normal":
+            levelClass = 'normal'
+            break;
+        case "High":
+            levelClass = 'high'
+            break;
+
+    }
+    return `level-${levelClass}`
+}
+
+
 function showData(data, keyword = "") {
     let shtml = "";
     data.map((e, i) => {
         let taskName = e.taskName;
-        let levelClass = "";
 
-
-        if (e.taskLevel === "Small") {
-            levelClass = "level-small";
-        } else if (e.taskLevel === "Normal") {
-            levelClass = "level-normal";
-        } else if (e.taskLevel === "High") {
-            levelClass = "level-high";
-        }
         if (keyword !== "") {
             let regex = new RegExp(`(${keyword})`, "gi");
             taskName = taskName.replace(regex, `<span class="highlight">$1</span>`);
         }
-        shtml += `  <tr>
+        shtml += ` <tr>
                 <td>${i + 1}</td>
-                <td>${taskName}</td> (sao phai sua e.taskname)
-                 <td class="${levelClass}">${e.taskLevel}</td>
+                <td>${taskName}</td> 
+                <td><span class="${handleRenderLevelClass(e.taskLevel)}">${e.taskLevel}</span></td>
                 <td>
-                    <button onclick="javascript:handleEdit('${e.id}')" class="btn-edit">EDIT</button>
-                    <button onclick="javascript:handleDelete('${e.id}')" class="btn-delete">DELETE</button>
+                    <button onclick="handleEdit('${e.id}')" class="btn-edit">EDIT</button>
+                    <button onclick="handleDelete('${e.id}')" class="btn-delete">DELETE</button>
                 </td>
-            </tr>`
+            </tr> `
     })
 
     $(ELEMENT_BODY).html(shtml);
